@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Finance Tracker</h1>
+        <div class="balance-container">
+            <h2>Current Balance</h2>
+            <p id="balance">$0.00</p>
+        </div>
+
+        <div class="form-container">
+            <h2>Add Transaction</h2>
+            <form id="transaction-form">
+                <input type="date" id="date" placeholder="Date" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <input type="text" id="category" placeholder="Category" required>
+                <button type="button" id="add-btn">Add Money</button>
+                <button type="button" id="subtract-btn">Subtract Money</button>
+            </form>
+
+            <button id="delete-btn">Delete All</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
