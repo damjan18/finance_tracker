@@ -11,18 +11,20 @@
         <h1>Finance Tracker</h1>
         <div class="balance-container">
             <h2>Current Balance</h2>
-            <p id="balance">$0.00</p>
+            <p id="balance" class="balance-text"></p>
         </div>
 
         <div class="form-container">
-            <h2>Add Transaction</h2>
-            <form id="transaction-form">
+            <h2>Make Transaction</h2>
+            <form id="transaction-form" class="transaction-form">
                 <input type="date" id="date" placeholder="Date" required>
                 <input type="text" id="description" placeholder="Description" required>
                 <input type="number" id="amount" placeholder="Amount" required>
                 <input type="text" id="category" placeholder="Category" required>
-                <button type="button" id="add-btn">Add Money</button>
-                <button type="button" id="subtract-btn">Subtract Money</button>
+                <div class="form-buttons">
+                    <button type="button" id="add-btn">Add Money</button>
+                    <button type="button" id="subtract-btn" class="subtract-btn">Subtract Money</button>
+                </div>
             </form>
 
             <button id="delete-btn">Delete All</button>
